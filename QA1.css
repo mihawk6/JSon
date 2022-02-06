@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color: rgb(10, 10, 10);
+    background-color: hsla(0, 86%, 47%, 0.411);
+}
+
+.table{
+    background-color: #87cbd4cc;
+    width: 99%;
+    padding: 2px;
+}
+.table tr th{
+    font-size: 1.8rem;
+    text-align: center;
+}
