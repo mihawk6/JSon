@@ -28,18 +28,19 @@
                 <td><input type="text"  class="form-control" ng-model="name"></td>
                 <td><input type="text"  class="form-control" ng-model="email"></td>
                 <td><input type="text"  class="form-control" ng-model="phone"></td>
-                <td><input type="number" class="form-control" ng-model="testcases" min="0" max="7"></td>
+                <td><input type="text" class="form-control" ng-model="testcases" min="0" max="12"></td>
                 <td><input type="text"  class="form-control" ng-model="Experience"></td>
-                <td><input type="number"  class="form-control" ng-model="salary" min="0" max="50000"></td>
+                <td><input type="text"  class="form-control" ng-model="salary" min="0" max="50000"></td>
             </tr>
         </thead>
         <tbody ng-repeat="emp in employees |filter: Eid| filter: name| filter: email| filter: phone| filter: testcases| filter: Experience| filter: salary">
             <tr>
+                <td>{{emp.Eid}}</td>
                 <td>{{emp.name | uppercase}}</td>
                 <td id={{emp.email}}>{{emp.email | validateEmail}}</td>
                 <td id={{emp.phone}}>{{emp.phone | validatePhone}}</td>
                 <td>{{emp.testcases}}</td>
-                <td>{{emp.Experience * 100 | number:2}}%</td>
+                <td>{{emp.Experience}}</td>
                 <td>{{emp.salary | currency}}</td>
             </tr>
         </tbody>

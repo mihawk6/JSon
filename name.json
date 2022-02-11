@@ -5,7 +5,7 @@
         "email": "ankesh1@gmail.com",
         "phone": "9538130466",
         "testcases":3,
-        "YearsOfExperience":2,
+        "Experience":2,
         "salary": 20000
     },
     {
@@ -14,7 +14,7 @@
         "email": "rameshs12@gmail.com",
         "phone": "9113894302",
         "testcases":6,
-        "YearsOfExperience":3,
+        "Experience":3,
         "salary": 28000
     },
     {
@@ -23,7 +23,7 @@
         "email": "lokeshk@gmail.com",
         "phone": "9150657341",
         "testcases":9,
-        "YearsOfExperience":7,
+        "Experience":7,
         "salary": 86000
     },
     {
@@ -32,7 +32,7 @@
         "email": "sheetal34@gmail.com",
         "phone": "9931667301",
         "testcases":4,
-        "YearsOfExperience":2,
+        "Experience":2,
         "salary": 30300
     },
     {
@@ -41,7 +41,7 @@
         "email": "priyanka12a@gmail.com",
         "phone": "9123456743",
         "testcases":3,
-        "YearsOfExperience":1,
+        "Experience":1,
         "salary": 10000
     },
     {
@@ -50,7 +50,7 @@
         "email": "ankursharma@gmail.com",
         "phone": "9114893402",
         "testcases":4,
-        "YearsOfExperience":2,
+        "Experience":2,
         "salary": 10500
     },
     {
@@ -59,7 +59,7 @@
         "email": "jeet12@gmail.com",
         "phone": "9114653402",
         "testcases":12,
-        "YearsOfExperience":4,
+        "Experience":4,
         "salary": 56000
     }
 ]
