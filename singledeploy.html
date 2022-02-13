@@ -8,9 +8,13 @@
    </head>
 <body>
 <div>
-  <h1 style="height: 1rem;background-color: blue;"></h1>
+  <h1 style="height: 1rem;background-color: saddlebrown;"></h1>
   <div class="container-fluid px-5 py-3">
-      <table class="table table-borderless table-hover container-fluid">
+    <div>
+      <label for="search_name">{{message}}</label>
+      <input type="text" name="search_name" id="search_name" ng-model="search_name">
+  </div>
+      <table class="table table-borderless table-hover container-fluid" id="search_table">
           <thead>
               <tr>
                 <th>Eid</th>
@@ -22,7 +26,7 @@
                 <th>salary</th>
               </tr>
           </thead>
-          <tbody ng-repeat="emp in employees">
+          <tbody ng-repeat="emp in employees | filter:search_name ">
               <tr>
                   <td>{{emp.Eid}}</td>
                   <td>{{emp.name | uppercase}}</td>

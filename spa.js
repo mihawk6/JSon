@@ -8,7 +8,7 @@ t.config(($routeProvider)=>{
         controller: "homeCtrl"
     })
     .when("/about", {
-        templateUrl: './singlereport.html',
+        templateUrl: './singletestreport.html',
         controller:'aboutCtrl'
     })
     .when("/test", {
@@ -46,14 +46,9 @@ t.controller("deployCtrl", function($scope,$rootScope, $http){
     $scope.message = "Search employees in meeting by name:"
 
     search_name = document.getElementById("search_name")
-    search_name.addEventListener('keyup', ()=>{
-        if(search_name.value.trim() == "")
-        {
-            document.getElementById("search_table").style.display = "none"
-        }
-        else
-        {
+    search_name.addEventListener('keyup', ()=>
+    { 
             document.getElementById("search_table").style.display = "table"
-        }
+        
     })
 })

@@ -33,7 +33,7 @@
         "phone": "9931667301",
         "testcases":4,
         "Experience":2,
-        "salary": 30300
+        "salary": 3030
     },
     {
         "Eid":"005",
@@ -42,7 +42,7 @@
         "phone": "9123456743",
         "testcases":3,
         "Experience":1,
-        "salary": 10000
+        "salary": 1000
     },
     {
         "Eid":"006",
@@ -51,7 +51,7 @@
         "phone": "9114893402",
         "testcases":4,
         "Experience":2,
-        "salary": 10500
+        "salary": 1050
     },
     {
          "Eid":"007",
@@ -60,6 +60,6 @@
         "phone": "9114653402",
         "testcases":12,
         "Experience":4,
-        "salary": 56000
+        "salary": 5600
     }
 ]
