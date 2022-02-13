@@ -1,0 +1,52 @@
+angular.module('Test',['ngRoute'])
+.config(function($routeProvider)
+{
+    $routeProvider.when('/Home',
+    {
+        templateUrl:'singlehome.html',
+        controller:'homectrl'
+    }).when('/Reports',
+    {
+        templateUrl:'singletestreport.html',
+        controller:'reportsctrl'
+    }).when('/Testreport',
+    {
+        templateUrl:'singledeploy.html',
+        controller:'deploymentctrl'
+    }).when('/Home/:First/:Last',
+    {
+        templateUrl:'singlehome.html',
+        controller:'homectrl'
+    })
+})
+.controller('myctrl',function()
+{
+
+})
+.controller("homectrl",function($scope,$routeParams)
+{
+    $scope.message="Test case Page"
+    if($routeParams.First&&$routeParams.Last)
+    {
+        $scope.person={
+            First:$routeParams.First,
+            Last:$routeParams.Last
+        };
+    }
+})
+.controller("Test_ctrl",function($scope,$http)
+{
+    $http.get('https://github.com/mihawk6/JSon/blob/main/name.json')
+    .success(function(response)
+    {
+        $scope.ticket_details=response.records;
+    });
+})
+.controller("deploymentctrl",function($scope,$http)
+{
+    $http.get('name.json')
+    .success(function(response)
+    {
+        $scope.employees=response.data;
+    });
+});

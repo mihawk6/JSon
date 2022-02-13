@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="Test" ng-controller="myctrl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> PMS | Project Management System</title>
     <link rel="stylesheet" href="s2.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
-   </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="spa.js"></script> 
+  </head>
 <body>
-  <div class="sidebar">
-    
+  <hr class="tb1">
+  <div class="sidebar">  
   </div>
   <nav>
     <div class="menu">
@@ -22,25 +25,26 @@
         <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="login.html">Sign out</a></li>
+        <li><a href="#/Testreport">Contact</a></li>
+        <li><a href="login.html">Sign In</a></li>
       </ul>
     </div>
-  </nav>
-  <div class="img"></div>
-  <div class="center"><br><br>
-    <div class="title"><b>Deploy your Project With PMS!</b></div><br>
-    <div class="btns">
-    <button>Initiate Deploy</button>
-      <a href="try.html"><button>Report</button></a>
-      <br>
-      <br>
-      <iframe width="600" height="400" src="https://www.youtube.com/embed/nZ3BaTY8c9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <iframe  width="800" height="400" src="https://momento360.com/e/u/36869c7ff03d4e08b708a1175dc443b6?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>
+    <hr class="tb1">
+  </nav><br><br><br><br>
+ 
+  <table class="tb">
+    <td>
+      <th height="700px"><ng-view></ng-view></th>
+    </td>
+  </table>
+  <aside class="left">
+  </aside>
+    
+    
     </div>
   </div>
 </body>
 
 </html>
-</html>
+
+

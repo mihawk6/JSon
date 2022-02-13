@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -19,7 +18,6 @@ nav{
   width: 100%;
   padding: 10px 0;
   z-index: 12;
-  opacity: 70%;
 }
 nav .menu{
   max-width: 1250px;
@@ -59,7 +57,7 @@ nav .menu{
   color: black;
 }
 .img{
-  background: url('https://c4.wallpaperflare.com/wallpaper/588/504/858/asus-republic-of-gamers-pc-gaming-computer-wallpaper-preview.jpg')no-repeat;
+  
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -121,6 +119,15 @@ nav .menu{
   background: white;
   color: black;
 }
-a:hover{
-  text-decoration: underline;
-} 
+.tb{
+table-layout: auto;
+border: 2px solid black;
+margin-left: 250px;
+margin-right: 100px;
+width: 80%;
+padding-right: 40px;
+background-color: rgb(209, 244, 248);
+}
+.tb1{
+  border: 4px solid black;
+}
