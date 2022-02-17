@@ -52,3 +52,23 @@ t.controller("deployCtrl", function($scope,$rootScope, $http){
         
     })
 })
+
+
+
+
+
+
+var http=require("http")
+const fs=require("fs")
+const path=require("path")
+const hostname="127.0.0.1";
+const port=5000;
+const server=http.createServer(function(reqest,response)
+{
+    response.writeHead(200,{"content-type":"text/html"})
+    fs.readFile(path.join(__dirname,"index.html"),"utf-8",(err,data)=>
+    {
+        if(err) throw err;
+        response.end(data);
+    });
+    });
