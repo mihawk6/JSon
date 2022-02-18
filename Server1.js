@@ -18,7 +18,7 @@ function filewriter() {
     }
     jsonFile.push(newdata)
 
-    fs.writeFile('/name.json',JSON.stringify(jsonFile),err => {
+    fs.writeFile('name.json',JSON.stringify(jsonFile),err => {
         if (err) throw err;
         console.log("Written");
     })

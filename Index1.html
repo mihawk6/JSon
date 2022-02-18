@@ -21,14 +21,14 @@
                 <th>Experience</th>
                 <th>Salary</th>
             </tr>
-            <tr ng-repeat="emp in employees">
+            <tr ng-repeat="emp in names">
                 <td>{{emp.Eid}}</td>
-                <td>{{emp.name | uppercase}}</td>
+                <td>{{emp.name}}</td>
                 <td>{{emp.email}}></td>
                 <td>{{emp.phone}}></td>
                 <td>{{emp.testcases}}</td>
                 <td>{{emp.Experience}}</td>
-                <td>{{emp.salary | currency}}</td>
+                <td>{{emp.salary}}</td>
             </tr>
         </table>
     </div>
